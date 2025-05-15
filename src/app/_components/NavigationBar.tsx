@@ -6,7 +6,12 @@ const NavigationBar: React.FC = () => {
     <header className="bg-white shadow-md">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-24">
         <div className="flex items-center">
-          <Image alt="Logo" src="/logo-no-bg.png" width={130} height={120} />
+          <Image
+            alt="Logo"
+            src="/images/logo-no-bg.png"
+            width={130}
+            height={120}
+          />
         </div>
         <div className="flex space-x-8">
           <a href="#" className="text-black text-sm font-semibold">

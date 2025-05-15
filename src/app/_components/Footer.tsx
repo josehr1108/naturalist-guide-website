@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="w-full">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-around pt-3">
           <Image
-            src="/logo-no-bg.png"
+            src="/images/logo-no-bg.png"
             alt="Logo"
             width={200}
             height={150}
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
               className="text-gray-500 hover:text-gray-700 dark:hover:text-white transition-colors duration-300"
             >
               <Image
-                src="/facebook-logo.png"
+                src="/images/facebook-logo.png"
                 alt="Facebook"
                 width={24}
                 height={24}
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
               className="text-gray-500 hover:text-gray-700 dark:hover:text-white transition-colors duration-300"
             >
               <Image
-                src="/instagram-logo.png"
+                src="/images/instagram-logo.png"
                 alt="Instagram"
                 width={24}
                 height={24}
