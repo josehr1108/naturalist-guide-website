@@ -2,11 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { MapPin, Mail } from "lucide-react";
 
-const Footer: React.FC = () => {
+import { Footer, FooterCopyright, FooterDivider } from "flowbite-react";
+
+const SiteFooter: React.FC = () => {
   return (
-    <footer className="bg-white">
-      <div className="w-full">
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-around pt-3">
+    <Footer container>
+      <div className="w-full text-center">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-around pt-3">
           <Image
             src="/images/logo-no-bg.png"
             alt="Logo"
@@ -14,22 +16,21 @@ const Footer: React.FC = () => {
             height={150}
             className="mb-6"
           ></Image>
-
           <div className="flex flex-col">
             <div className="flex items-center mb-2 justify-center text-center">
-              <MapPin size={16} color="black" className="me-2" />
+              <MapPin size={16} className="me-2 dark:text-white text-black" />
               <span className="text-sm text-gray-500 dark:text-gray-400 text-center">
                 La Fortuna, San Carlos, Costa Rica
               </span>
             </div>
             <div className="flex items-center mb-2 justify-center text-center">
-              <Mail size={16} color="black" className="me-2" />
+              <Mail size={16} className="me-2 dark:text-white text-black" />
               <span className="text-sm text-gray-500 dark:text-gray-400 text-center">
                 <a href="mailto:raulobregon@gmail.com">raulobregon@gmail.com</a>
               </span>
             </div>
           </div>
-          <div className="flex mt-3">
+          <div className="flex mt-3 mb-3">
             <a
               href="https://www.facebook.com/raulobregonbirdmancr"
               target="_blank"
@@ -60,13 +61,16 @@ const Footer: React.FC = () => {
             </a>
           </div>
         </div>
-        <hr className="mx-auto my-5" />
-        <span className="block text-sm text-gray-500 dark:text-gray-400 text-center pb-3">
-          © 2025 Raul Obregon Birdman CR. All Rights Reserved.{" "}
-        </span>
+        <FooterDivider />
+        <FooterCopyright
+          href="#"
+          by=" Raul Obregon Birdman CR"
+          year={2025}
+          className="py-3"
+        />
       </div>
-    </footer>
+    </Footer>
   );
 };
 
-export default Footer;
+export default SiteFooter;
