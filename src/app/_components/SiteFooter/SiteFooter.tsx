@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { MapPin, Mail } from "lucide-react";
@@ -6,7 +8,7 @@ import { Footer, FooterCopyright, FooterDivider } from "flowbite-react";
 
 const SiteFooter: React.FC = () => {
   return (
-    <Footer container>
+    <Footer container className="bg-[var(--color-tasman)] rounded-b-none">
       <div className="w-full text-center">
         <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-around pt-3">
           <Image
@@ -18,14 +20,14 @@ const SiteFooter: React.FC = () => {
           ></Image>
           <div className="flex flex-col">
             <div className="flex items-center mb-2 justify-center text-center">
-              <MapPin size={16} className="me-2 dark:text-white text-black" />
-              <span className="text-sm text-gray-500 dark:text-gray-400 text-center">
+              <MapPin size={16} className="me-2 text-primary" />
+              <span className="text-lg text-primary text-center">
                 La Fortuna, San Carlos, Costa Rica
               </span>
             </div>
             <div className="flex items-center mb-2 justify-center text-center">
-              <Mail size={16} className="me-2 dark:text-white text-black" />
-              <span className="text-sm text-gray-500 dark:text-gray-400 text-center">
+              <Mail size={16} className="me-2 text-primary" />
+              <span className="text-lg text-primary text-center">
                 <a href="mailto:raulobregon@gmail.com">raulobregon@gmail.com</a>
               </span>
             </div>
@@ -35,7 +37,6 @@ const SiteFooter: React.FC = () => {
               href="https://www.facebook.com/raulobregonbirdmancr"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-700 dark:hover:text-white transition-colors duration-300"
             >
               <Image
                 src="/images/facebook-logo.png"
@@ -49,7 +50,6 @@ const SiteFooter: React.FC = () => {
               href="https://www.instagram.com/raulobregonbirdmancr/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-700 dark:hover:text-white transition-colors duration-300"
             >
               <Image
                 src="/images/instagram-logo.png"
@@ -61,12 +61,12 @@ const SiteFooter: React.FC = () => {
             </a>
           </div>
         </div>
-        <FooterDivider />
+        <FooterDivider className="border-[var(--color-forestgreen)]" />
         <FooterCopyright
           href="#"
           by=" Raul Obregon Birdman CR"
           year={2025}
-          className="py-3"
+          className="py-3 text-primary"
         />
       </div>
     </Footer>

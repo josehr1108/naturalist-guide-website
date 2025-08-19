@@ -1,0 +1,13 @@
+.navBarBg {
+  background-color: var(--color-tasman);
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--color-forestgreen);
+  font-weight: 800;
+
+  &:hover {
+    color: var(--color-corduroy);
+  }
+}

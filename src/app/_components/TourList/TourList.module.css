@@ -1,0 +1,10 @@
+.cardContainer {
+  background-color: var(--color-honeydew);
+  color: var(--color-forestgreen);
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  div:nth-child(2) {
+    max-height: 250px;
+  }
+}

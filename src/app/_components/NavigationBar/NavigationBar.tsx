@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Navbar,
   NavbarBrand,
@@ -7,10 +9,11 @@ import {
 } from "flowbite-react";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "./NavigationBar.module.css";
 
 const NavigationBar: React.FC = () => {
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid className={styles.navBarBg}>
       <NavbarBrand as={Link} href="/">
         <Image
           alt="Logo"
@@ -21,16 +24,13 @@ const NavigationBar: React.FC = () => {
       </NavbarBrand>
       <NavbarToggle />
       <NavbarCollapse>
-        <NavbarLink as={Link} href="/" active>
+        <NavbarLink as={Link} href="/" active className={styles.navLink}>
           Home
         </NavbarLink>
-        <NavbarLink as={Link} href="/tours">
+        <NavbarLink as={Link} href="/tours" className={styles.navLink}>
           Tours
         </NavbarLink>
-        <NavbarLink as={Link} href="/faq">
-          FAQ
-        </NavbarLink>
-        <NavbarLink as={Link} href="/contact">
+        <NavbarLink as={Link} href="/contact" className={styles.navLink}>
           Contact
         </NavbarLink>
       </NavbarCollapse>
