@@ -24,7 +24,7 @@ const NavigationBar: React.FC = () => {
       </NavbarBrand>
       <NavbarToggle />
       <NavbarCollapse>
-        <NavbarLink as={Link} href="/" active className={styles.navLink}>
+        <NavbarLink as={Link} href="/" className={styles.navLink}>
           Home
         </NavbarLink>
         <NavbarLink as={Link} href="/tours" className={styles.navLink}>

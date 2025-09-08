@@ -1,3 +1,6 @@
+.cardAnchor {
+  text-decoration: none;
+}
 .cardContainer {
   background-color: var(--color-honeydew);
   color: var(--color-forestgreen);

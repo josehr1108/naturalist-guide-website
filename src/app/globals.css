@@ -9,6 +9,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Text */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,6 +26,17 @@ body {
   text-shadow: 1px 1px 1px black;
 }
 
+.paragraph-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* Gradients */
 .startGradientBackground {
   background: #ffffff;
   background: linear-gradient(
@@ -42,17 +54,17 @@ body {
     var(--color-whitesmoke) 100%
   );
 }
-
-.paragraph-text {
-  font-size: 1rem;
-  line-height: 1.5rem;
-
-  @media screen and (min-width: 768px) {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
+/* Swiper */
+.mySwiper .swiper-pagination-bullet {
+  background-color: var(--color-whitesmoke);
+  opacity: 1;
 }
 
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: var(--color-everglade);
+}
+
+/* Colors */
 :root {
   --color-tasman: #cad8c7;
   --color-surf: #c1d9c1;
@@ -60,6 +72,7 @@ body {
   --color-corduroy: #667467;
   --color-lunargreen: #353f34;
   --color-forestgreen: #29382c;
+  --color-everglade: #204e25;
   --color-honeydew: #f0fff4;
   --color-whitesmoke: #f5f5f5;
 }

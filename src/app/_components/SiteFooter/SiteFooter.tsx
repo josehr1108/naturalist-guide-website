@@ -8,7 +8,7 @@ import { Footer, FooterCopyright, FooterDivider } from "flowbite-react";
 
 const SiteFooter: React.FC = () => {
   return (
-    <Footer container className="bg-[var(--color-tasman)] rounded-b-none">
+    <Footer container className="bg-[var(--color-tasman)] rounded-none">
       <div className="w-full text-center">
         <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-around pt-3">
           <Image
