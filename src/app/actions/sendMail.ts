@@ -24,7 +24,7 @@ export async function sendMail(formData: FormData) {
   try {
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
-      to: "josehr1108@gmail.com", // where you want to receive it
+      to: "josehr1108@gmail.com", // TODO: replace this with Raul Obregon's email
       subject: "New contact form message",
       text: message,
       html: `<p><strong>Name:</strong> ${name}</p>
