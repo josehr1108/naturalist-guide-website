@@ -28,13 +28,15 @@ const SiteFooter: React.FC = () => {
             <div className="flex items-center mb-2 justify-center text-center">
               <Mail size={16} className="me-2 text-primary" />
               <span className="text-lg text-primary text-center">
-                <a href="mailto:raulobregon@gmail.com">raulobregon@gmail.com</a>
+                <a href="mailto:raulobregonbirdmancr@gmail.com">
+                  raulobregonbirdmancr@gmail.com
+                </a>
               </span>
             </div>
           </div>
           <div className="flex mt-3 mb-3">
             <a
-              href="https://www.facebook.com/raulobregonbirdmancr"
+              href="https://www.facebook.com/raul.obregonhernandez"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -47,7 +49,7 @@ const SiteFooter: React.FC = () => {
               />
             </a>
             <a
-              href="https://www.instagram.com/raulobregonbirdmancr/"
+              href="https://www.instagram.com/raul_obregon_birdmancr"
               target="_blank"
               rel="noopener noreferrer"
             >

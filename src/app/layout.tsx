@@ -26,6 +26,8 @@ export const metadata: Metadata = {
     "ecotourism",
     "Costa Rica wildlife",
     "nature adventures",
+    "Raul Obregon",
+    "Birdman CR",
   ],
   authors: [{ name: "Raul Obregon Birdman CR" }],
   creator: "Raul Obregon Birdman CR",
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://your-domain.com"), // TODO: replace with your email domain
+  metadataBase: new URL("https://raulobregonbirdmancr.com"),
   alternates: {
     canonical: "/",
   },
@@ -43,7 +45,7 @@ export const metadata: Metadata = {
     title: "Raul Obregon Birdman CR - Authentic Wildlife Adventures",
     description:
       "Embark on unique adventures in Costa Rica's tropical forests, exotic birds, and breathtaking landscapes. Birdwatching tours, night walks, and national park explorations for nature lovers.",
-    url: "https://your-domain.com", // TODO: Replace with your actual domain
+    url: "https://raulobregonbirdmancr.com",
     siteName: "Raul Obregon Birdman CR",
     images: [
       {
@@ -62,7 +64,6 @@ export const metadata: Metadata = {
     description:
       "Embark on unique adventures in Costa Rica's tropical forests, exotic birds, and breathtaking landscapes.",
     images: ["/images/logo-no-bg.png"],
-    creator: "@yourtwitterhandle", // TODO: Replace with your Twitter handle
   },
   robots: {
     index: true,
@@ -94,24 +95,41 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Raul Obregon Birdman CR",
-              url: "https://your-domain.com", // TODO: Replace with your actual domain
-              logo: "https://your-domain.com/images/logo-no-bg.png", // TODO: Replace with your actual domain
+              url: "https://raulobregonbirdmancr.com",
+              logo: "https://raulobregonbirdmancr.com/images/logo-no-bg.png",
               description:
                 "Authentic wildlife adventures and naturalist tours in Costa Rica",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+506-1234-5678", // TODO: Replace with actual phone
+                telephone: "+506 87434489",
                 contactType: "Personal Phone Number",
                 availableLanguage: "English",
               },
               sameAs: [
-                "https://www.facebook.com/yourpage", // TODO: Replace with actual social links
-                "https://www.instagram.com/yourpage",
-                "https://twitter.com/yourhandle",
+                "https://www.facebook.com/raul.obregonhernandez",
+                "https://www.instagram.com/raul_obregon_birdmancr",
               ],
             }),
           }}
         />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/images/favicon/site.webmanifest" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

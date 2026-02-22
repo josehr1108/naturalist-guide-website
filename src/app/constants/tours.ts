@@ -14,7 +14,7 @@ export const TOUR_LIST: Tour[] = [
     ],
     images: [
       "/images/tour-1.jpg",
-      "/images/tour-2.jpg",
+      "/images/ornate-hawk-eagle.jpeg",
       "/images/tour-3.png",
       "/images/tour-4.png",
       "/images/tour-5.png",
