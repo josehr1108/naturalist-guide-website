@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "./_components/NavigationBar/NavigationBar";
@@ -137,6 +138,26 @@ export default function RootLayout({
         <NavigationBar />
         {children}
         <SiteFooter />
+        <a
+          href="https://wa.me/50687434489"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+          title="Let's chat on WhatsApp"
+          style={{
+            position: "fixed",
+            right: "2rem",
+            bottom: "1rem",
+            zIndex: 9999,
+          }}
+        >
+          <Image
+            src="/images/whatsapp.png"
+            alt="WhatsApp logo"
+            width={56}
+            height={56}
+          />
+        </a>
       </body>
     </html>
   );
