@@ -3,32 +3,31 @@ import { Tour } from "./types";
 export const TOUR_LIST: Tour[] = [
   {
     featuredImage: "/images/tour-1.jpg",
-    title: "Morning Birdwatching in Native Forests",
-    slug: "morning-birdwatching-in-native-forests",
+    title: "Birdwatching Tour",
+    slug: "birdwatching-tour",
     shortDescription:
-      "Experience the early morning calls of native bird species in lush forest habitats. Perfect for beginner and seasoned birders alike.",
+      "Discover the magic of birdwatching in Costa Rica, a world-renowned natural paradise rich in biodiversity.",
     longDescriptionParagraphs: [
-      "Start your day surrounded by the melodies of the forest. This guided birdwatching tour takes you into pristine habitats at sunrise, when many species are most active.",
-      "Learn to identify local birds by their songs and behaviors, discover unique ecological relationships, and enjoy a peaceful walk through vibrant greenery.",
-      "Ideal for families, beginners, and experienced birders who want to deepen their connection with nature.",
+      "Discover the magic of birdwatching in Costa Rica, a world-renowned natural paradise rich in biodiversity. Guided by experienced professional Raul Obregon, you will explore lush forest trails while spotting birds such as toucans, hummingbirds, and tanagers in their natural habitat.",
+      "A unique experience, perfect for nature lovers, photographers, and eco-tourism enthusiasts. 🌿🦜",
     ],
     images: [
       "/images/tour-1.jpg",
       "/images/ornate-hawk-eagle.jpeg",
       "/images/tour-3.png",
-      "/images/tour-4.png",
-      "/images/tour-5.png",
-      "/images/tour-6.png",
+      "/images/jacamar.jpg",
+      "/images/black-and-white owl.jpg",
+      "/images/gartered-trogon.jpg",
     ],
     location: "La Fortuna, San Carlos",
-    duration: "1 hour",
+    duration: "2 hours",
     minAge: 5,
     infoSections: [
       {
         title: "Included / Excluded",
         type: "checkmarks",
         items: [
-          { text: "Experienced local guide", icon: "checked" },
+          { text: "Experienced local guide (Raul Obregon)", icon: "checked" },
           { text: "Binoculars", icon: "checked" },
           { text: "Bottled water", icon: "checked" },
           { text: "Snacks", icon: "checked" },
@@ -39,8 +38,8 @@ export const TOUR_LIST: Tour[] = [
         title: "What will you do",
         type: "bulletPoints",
         items: [
-          { text: "Guided walk through native forest trails" },
-          { text: "Bird identification and ecology insights" },
+          { text: "Guided walk through lush forest trails" },
+          { text: "Spotting birds like toucans, hummingbirds, and tanagers" },
           { text: "Photo opportunities of birds and scenery" },
         ],
       },
@@ -49,46 +48,96 @@ export const TOUR_LIST: Tour[] = [
         type: "paragraphs",
         items: [
           {
-            text: "Start your day surrounded by the melodies of the forest. This guided birdwatching tour takes you into pristine habitats at sunrise, when many species are most active.",
+            text: "Discover the magic of birdwatching in Costa Rica, a world-renowned natural paradise rich in biodiversity. Guided by experienced professional Raul Obregon, you will explore lush forest trails while spotting birds such as toucans, hummingbirds, and tanagers in their natural habitat.",
           },
           {
-            text: "A safe and thrilling way to explore the ecosystem from a different perspective.",
+            text: "A unique experience, perfect for nature lovers, photographers, and eco-tourism enthusiasts. 🌿🦜",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    featuredImage: "/images/trip1.jpg",
+    title: "Birdwatching Trip",
+    slug: "birdwatching-trip",
+    shortDescription:
+      "Our Birdwatching Trip is a fully customizable experience designed for true bird lovers and wildlife photographers.",
+    longDescriptionParagraphs: [
+      "Our Birdwatching Trip is a fully customizable experience designed for true bird lovers and wildlife photographers. We organize specialized itineraries that take you to different regions of Costa Rica, carefully selected for their rich bird diversity and unique ecosystems.",
+      "Accompanied by expert guide Raul Obregon, you will travel across the country to observe and photograph a wide variety of bird species in their natural habitats, enjoying an unforgettable journey through Costa Rica's most iconic birdwatching destinations. 🌿🦜",
+    ],
+    images: [
+      "/images/trip1.jpg",
+      "/images/trip2.jpg",
+      "/images/trip4.jpg",
+      "/images/trip3.jpg",
+    ],
+    location: "La Fortuna, San Carlos",
+    duration: "8 hours",
+    minAge: 5,
+    infoSections: [
+      {
+        title: "Included / Excluded",
+        type: "checkmarks",
+        items: [
+          { text: "Experienced local guide (Raul Obregon)", icon: "checked" },
+          { text: "Binoculars", icon: "checked" },
+          { text: "Bottled water", icon: "checked" },
+          { text: "Snacks", icon: "checked" },
+          { text: "Transportation to/from hotel", icon: "unchecked" },
+        ],
+      },
+      {
+        title: "What will you do",
+        type: "bulletPoints",
+        items: [
+          { text: "Customized itineraries across different regions" },
+          { text: "Observe and photograph diverse bird species" },
+          { text: "Explore iconic birdwatching destinations" },
+        ],
+      },
+      {
+        title: "More Details",
+        type: "paragraphs",
+        items: [
+          {
+            text: "Our Birdwatching Trip is a fully customizable experience designed for true bird lovers and wildlife photographers. We organize specialized itineraries that take you to different regions of Costa Rica, carefully selected for their rich bird diversity and unique ecosystems.",
           },
           {
-            text: "When the sun sets, the forest comes alive with new sounds and sights. On this guided night walk, you’ll use flashlights and your senses to uncover the secret world of nocturnal creatures.",
+            text: "Accompanied by expert guide Raul Obregon, you will travel across the country to observe and photograph a wide variety of bird species in their natural habitats, enjoying an unforgettable journey through Costa Rica's most iconic birdwatching destinations. 🌿🦜",
           },
         ],
       },
     ],
   },
   {
-    featuredImage: "/images/tour-2.jpg",
-    title: "Nocturnal Nature Walk",
-    slug: "nocturnal-nature-walk",
+    featuredImage: "/images/nature2.jpg",
+    title: "Nature Activities",
+    slug: "nature-activities",
     shortDescription:
-      "Discover the hidden life of the forest after sunset. Observe owls, frogs, and other nocturnal species in a safe guided setting.",
+      "Enjoy a unique naturalist experience in Costa Rica with a variety of activities designed to connect you with nature.",
     longDescriptionParagraphs: [
-      "When the sun sets, the forest comes alive with new sounds and sights. On this guided night walk, you’ll use flashlights and your senses to uncover the secret world of nocturnal creatures.",
-      "Spot owls perched in the trees, listen to the calls of frogs, and observe fascinating insects and mammals that only appear after dark.",
-      "A safe and thrilling way to explore the ecosystem from a different perspective.",
+      "Enjoy a unique naturalist experience in Costa Rica with a variety of activities designed to connect you with nature. Explore volcanic landscapes on guided hikes, walk through the rainforest on breathtaking hanging bridges, and observe sloths in their natural habitat.",
+      "An unforgettable adventure combining wildlife, scenic beauty, and authentic eco-experiences. 🌿🦥🌋",
     ],
     images: [
-      "/images/tour-1.jpg",
-      "/images/tour-2.jpg",
-      "/images/tour-3.png",
-      "/images/tour-4.png",
-      "/images/tour-5.png",
-      "/images/tour-6.png",
+      "/images/nature1.jpg",
+      "/images/nature2.jpg",
+      "/images/nature3.jpg",
+      "/images/nature4.jpg",
+      "/images/nature5.jpg",
+      "/images/nature6.jpg",
     ],
     location: "La Fortuna, San Carlos",
-    duration: "3 hours",
+    duration: "4 hours",
     minAge: 5,
     infoSections: [
       {
         title: "Included / Excluded",
         type: "checkmarks",
         items: [
-          { text: "Experienced local guide", icon: "checked" },
+          { text: "Experienced local guide (Raul Obregon)", icon: "checked" },
           { text: "Binoculars", icon: "checked" },
           { text: "Bottled water", icon: "checked" },
           { text: "Snacks", icon: "checked" },
@@ -99,42 +148,51 @@ export const TOUR_LIST: Tour[] = [
         title: "What will you do",
         type: "bulletPoints",
         items: [
-          { text: "Guided walk through native forest trails" },
-          { text: "Bird identification and ecology insights" },
-          { text: "Photo opportunities of birds and scenery" },
+          { text: "Guided hikes through volcanic landscapes" },
+          { text: "Walk through rainforest on hanging bridges" },
+          { text: "Observe sloths in their natural habitat" },
+        ],
+      },
+      {
+        title: "More Details",
+        type: "paragraphs",
+        items: [
+          {
+            text: "Enjoy a unique naturalist experience in Costa Rica with a variety of activities designed to connect you with nature. Explore volcanic landscapes on guided hikes, walk through the rainforest on breathtaking hanging bridges, and observe sloths in their natural habitat.",
+          },
+          {
+            text: "An unforgettable adventure combining wildlife, scenic beauty, and authentic eco-experiences. 🌿🦥🌋",
+          },
         ],
       },
     ],
   },
   {
-    featuredImage: "/images/tour-3.png",
-    title: "Highland Birding Adventure",
-    slug: "highland-birding-adventure",
+    featuredImage: "/images/night1.jpg",
+    title: "Night Walk",
+    slug: "night-walk",
     shortDescription:
-      "A high-altitude trek through mountain trails to spot rare raptors and endemic birds of the highlands.",
+      "Experience the magic of night walks in Costa Rica, where the rainforest comes alive after dark.",
     longDescriptionParagraphs: [
-      "Venture into the cool, misty highlands for a birding experience like no other. This adventure takes you along rugged mountain paths where rare species such as highland raptors and endemic songbirds thrive.",
-      "Your expert guide will help you spot and identify birds, explain their unique adaptations, and highlight the dramatic landscapes that make this region so special.",
-      "A rewarding journey for adventurous birdwatchers seeking rare sightings.",
+      "Experience the magic of night walks in Costa Rica, where the rainforest comes alive after dark. Guided by expert Raul Obregon, explore illuminated trails to discover nocturnal wildlife such as frogs, insects, reptiles, and other fascinating creatures in their natural habitat.",
+      "A thrilling and immersive way to experience Costa Rica's biodiversity from a completely different perspective. 🌙🌿.",
     ],
     images: [
-      "/images/tour-1.jpg",
-      "/images/tour-2.jpg",
-      "/images/tour-3.png",
-      "/images/tour-4.png",
-      "/images/tour-5.png",
-      "/images/tour-6.png",
+      "/images/night1.jpg",
+      "/images/night2.jpg",
+      "/images/night3.jpg",
+      "/images/night4.jpg",
     ],
     location: "La Fortuna, San Carlos",
-    duration: "3 hours",
+    duration: "2 hours",
     minAge: 5,
     infoSections: [
       {
         title: "Included / Excluded",
         type: "checkmarks",
         items: [
-          { text: "Experienced local guide", icon: "checked" },
-          { text: "Binoculars", icon: "checked" },
+          { text: "Experienced local guide (Raul Obregon)", icon: "checked" },
+          { text: "Flashlights", icon: "checked" },
           { text: "Bottled water", icon: "checked" },
           { text: "Snacks", icon: "checked" },
           { text: "Transportation to/from hotel", icon: "unchecked" },
@@ -144,137 +202,21 @@ export const TOUR_LIST: Tour[] = [
         title: "What will you do",
         type: "bulletPoints",
         items: [
-          { text: "Guided walk through native forest trails" },
-          { text: "Bird identification and ecology insights" },
-          { text: "Photo opportunities of birds and scenery" },
-        ],
-      },
-    ],
-  },
-  {
-    featuredImage: "/images/tour-4.png",
-    title: "Coastal Trail & Seabird Discovery",
-    slug: "coastal-trail-seabird-discovery",
-    shortDescription:
-      "Hike along dramatic coastal cliffs while spotting gulls, terns, and marine life. A scenic, relaxing experience for all levels.",
-    longDescriptionParagraphs: [
-      "Breathe in the ocean air as you follow trails along breathtaking cliffs and sandy beaches. This coastal walk is perfect for observing seabirds like gulls, terns, and pelicans in their natural environment.",
-      "Along the way, your guide will point out marine life and share fascinating insights into coastal ecosystems.",
-      "The relaxed pace and spectacular views make this tour an unforgettable experience for nature lovers of all ages.",
-    ],
-    images: [
-      "/images/tour-1.jpg",
-      "/images/tour-2.jpg",
-      "/images/tour-3.png",
-      "/images/tour-4.png",
-      "/images/tour-5.png",
-      "/images/tour-6.png",
-    ],
-    location: "La Fortuna, San Carlos",
-    duration: "3 hours",
-    minAge: 5,
-    infoSections: [
-      {
-        title: "Included / Excluded",
-        type: "checkmarks",
-        items: [
-          { text: "Experienced local guide", icon: "checked" },
-          { text: "Binoculars", icon: "checked" },
-          { text: "Bottled water", icon: "checked" },
-          { text: "Snacks", icon: "checked" },
-          { text: "Transportation to/from hotel", icon: "unchecked" },
+          { text: "Guided walk through illuminated trails" },
+          { text: "Discover nocturnal wildlife like frogs, insects, reptiles" },
+          { text: "Immersive experience of rainforest after dark" },
         ],
       },
       {
-        title: "What will you do",
-        type: "bulletPoints",
+        title: "More Details",
+        type: "paragraphs",
         items: [
-          { text: "Guided walk through native forest trails" },
-          { text: "Bird identification and ecology insights" },
-          { text: "Photo opportunities of birds and scenery" },
-        ],
-      },
-    ],
-  },
-  {
-    featuredImage: "/images/tour-5.png",
-    title: "Guided Forest Ecology Tour",
-    slug: "guided-forest-ecology-tour",
-    shortDescription:
-      "Learn about the complex relationships between plants, birds, and wildlife in a vibrant forest ecosystem.",
-    longDescriptionParagraphs: [
-      "Step into the heart of the forest and uncover the hidden connections that sustain life. This guided tour focuses on forest ecology, teaching you how plants, birds, insects, and mammals interact to create a balanced environment.",
-      "Your guide will explain fascinating ecological processes, point out unique species, and help you appreciate the forest as a living, interconnected system.",
-      "Perfect for curious minds and anyone who loves learning while exploring.",
-    ],
-    images: ["/images/tour-1.jpg", "/images/tour-2.jpg", "/images/tour-3.png"],
-    location: "La Fortuna, San Carlos",
-    duration: "3 hours",
-    minAge: 5,
-    infoSections: [
-      {
-        title: "Included / Excluded",
-        type: "checkmarks",
-        items: [
-          { text: "Experienced local guide", icon: "checked" },
-          { text: "Binoculars", icon: "checked" },
-          { text: "Bottled water", icon: "checked" },
-          { text: "Snacks", icon: "checked" },
-          { text: "Transportation to/from hotel", icon: "unchecked" },
-        ],
-      },
-      {
-        title: "What will you do",
-        type: "bulletPoints",
-        items: [
-          { text: "Guided walk through native forest trails" },
-          { text: "Bird identification and ecology insights" },
-          { text: "Photo opportunities of birds and scenery" },
-        ],
-      },
-    ],
-  },
-  {
-    featuredImage: "/images/tour-6.png",
-    title: "Full-Day Jungle Expedition",
-    slug: "full-day-jungle-expedition",
-    shortDescription:
-      "A full-day immersive birdwatching and nature exploration through tropical rainforest trails. Includes lunch and binoculars.",
-    longDescriptionParagraphs: [
-      "Immerse yourself in the wonders of the tropical rainforest with this full-day expedition. Trek through diverse habitats alongside a knowledgeable guide, spotting colorful birds, exotic wildlife, and lush plant life along the way.",
-      "This experience includes lunch and the use of binoculars, allowing you to focus fully on the sights and sounds of the jungle.",
-      "An unforgettable journey for nature enthusiasts ready for a deep dive into the rainforest ecosystem.",
-    ],
-    images: [
-      "/images/tour-1.jpg",
-      "/images/tour-2.jpg",
-      "/images/tour-3.png",
-      "/images/tour-4.png",
-      "/images/tour-5.png",
-      "/images/tour-6.png",
-    ],
-    location: "La Fortuna, San Carlos",
-    duration: "3 hours",
-    minAge: 5,
-    infoSections: [
-      {
-        title: "Included / Excluded",
-        type: "checkmarks",
-        items: [
-          { text: "Experienced local guide", icon: "checked" },
-          { text: "Binoculars", icon: "checked" },
-          { text: "Bottled water", icon: "checked" },
-          { text: "Snacks", icon: "checked" },
-          { text: "Transportation to/from hotel", icon: "unchecked" },
-        ],
-      },
-      {
-        title: "What will you do",
-        type: "bulletPoints",
-        items: [
-          { text: "Guided walk through native forest trails" },
-          { text: "Bird identification and ecology insights" },
-          { text: "Photo opportunities of birds and scenery" },
+          {
+            text: "Experience the magic of night walks in Costa Rica, where the rainforest comes alive after dark. Guided by expert Raul Obregon, explore illuminated trails to discover nocturnal wildlife such as frogs, insects, reptiles, and other fascinating creatures in their natural habitat.",
+          },
+          {
+            text: "A thrilling and immersive way to experience Costa Rica's biodiversity from a completely different perspective. 🌙🌿.",
+          },
         ],
       },
     ],

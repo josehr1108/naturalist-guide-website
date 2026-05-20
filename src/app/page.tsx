@@ -4,7 +4,7 @@ import HeroSection from "./_components/HeroSection/HeroSection";
 import TourList from "./_components/TourList/TourList";
 import CTASection from "./_components/CtaSection/CtaSection";
 
-const HERO_TITLE = "Discover Costa Rica Through the Eyes of a Naturalist";
+const HERO_TITLE = "Discover Costa Rica Through the Eyes of a Birder";
 const HERO_DESCRIPTION =
   "Embark on a unique adventure surrounded by tropical forests, exotic birds, and breathtaking landscapes. From birdwatching tours to night walks and explorations of national parks, experience journeys designed for nature lovers seeking authentic moments in one of the most biodiverse countries on Earth.";
 const HERO_IMAGE_SRC = "/images/bosque-fondo.png";
