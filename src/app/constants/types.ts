@@ -1,6 +1,7 @@
 interface TourInfoSectionItem {
   text: string;
   icon?: "checked" | "unchecked";
+  secondaryText?: string;
 }
 export interface TourInfoSection {
   title: string;
@@ -16,6 +17,6 @@ export interface Tour {
   images: string[];
   location: string;
   duration: string;
-  minAge: number;
+  maxPeople: string | number;
   infoSections?: TourInfoSection[];
 }

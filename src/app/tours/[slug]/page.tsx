@@ -62,8 +62,8 @@ const TourPage = ({ params }: { params: Promise<Tour> }) => {
             <div className="info-node-wrapper flex items-center mb-2">
               <User size={30} className="me-2 text-primary" />
               <div className="flex flex-col items-start">
-                <span className="font-bold">Min. Age</span>
-                <span>{selectedTour.minAge} years</span>
+                <span className="font-bold">Max. People</span>
+                <span>{selectedTour.maxPeople}</span>
               </div>
             </div>
           </div>
@@ -142,6 +142,11 @@ const TourPage = ({ params }: { params: Promise<Tour> }) => {
                               isChecked ? "text-green-600" : "text-red-600"
                             }
                           />
+                          {item.secondaryText && (
+                            <span className="text-sm opacity-80">
+                              {item.secondaryText}
+                            </span>
+                          )}
                         </span>
                       );
                     })}

@@ -7,10 +7,10 @@ import { useActionState, useEffect } from "react";
 import Swal from "sweetalert2";
 
 const HERO_TITLE = "Let's Get In Touch";
-const HERO_IMAGE_SRC = "/images/arenal-contact-bg.png";
+const HERO_IMAGE_SRC = "/images/bg-2.png";
 const HERO_DESCRIPTION =
   "Every traveler is unique. Tell me what you’re looking for, and together we’ll create a tailor-made nature experience.";
-const HERO_IMAGE_ALT = "Arenal volcano background";
+const HERO_IMAGE_ALT = "Jabiru bird in Costa Rica";
 
 interface FormState {
   success: boolean;
@@ -25,7 +25,7 @@ const Contact = () => {
     {
       success: false,
       error: "",
-    }
+    },
   );
 
   useEffect(() => {
