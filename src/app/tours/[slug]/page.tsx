@@ -8,8 +8,6 @@ import useScreenCheck from "@/app/hooks/useScreenCheck";
 import { notFound } from "next/navigation";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -27,9 +25,6 @@ const TourPage = ({ params }: { params: Promise<Tour> }) => {
   const selectedTour = TOUR_LIST.find((tour) => tour.slug === slug);
 
   if (!selectedTour) {
-    // Redirect to the built-in Next.js not-found page
-    // Import notFound from 'next/navigation' at the top of your file
-    // import { notFound } from "next/navigation";
     return notFound();
   }
 
@@ -76,7 +71,7 @@ const TourPage = ({ params }: { params: Promise<Tour> }) => {
                 dynamicBullets: true,
               }}
               modules={[Pagination]}
-              className="mySwiper w-full h-[500px]"
+              className="mySwiper w-full h-[500px] swiper-mobile-bg"
             >
               {selectedTour.images.map((src, index) => (
                 <SwiperSlide key={index} className="relative">
@@ -86,7 +81,7 @@ const TourPage = ({ params }: { params: Promise<Tour> }) => {
                     fill
                     priority={index === 0}
                     sizes="(max-width: 768px) 100vw, 800px"
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </SwiperSlide>
               ))}

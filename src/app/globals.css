@@ -64,6 +64,15 @@ body {
   background-color: var(--color-everglade);
 }
 
+.swiper-mobile-bg {
+  background: linear-gradient(
+    180deg,
+    var(--color-whitesmoke) 0%,
+    var(--color-norway) 50%,
+    var(--color-corduroy) 100%
+  );
+}
+
 /* Colors */
 :root {
   --color-tasman: #cad8c7;
