@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Contact Us - Raul Obregon Birdman CR",
     description:
       "Get in touch to plan your personalized nature adventure in Costa Rica.",
-    url: "https://your-domain.com/contact", //TODO: Replace with your actual domain
+    url: "https://raulobregonbirdmancr.com/contact",
     type: "website",
   },
 };

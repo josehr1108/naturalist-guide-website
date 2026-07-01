@@ -27,7 +27,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${tour.title} - Raul Obregon Birdman CR`,
       description: tour.shortDescription,
-      url: `https://your-domain.com/tours/${slug}`, //TODO: Replace with your actual domain
+      url: `https://raulobregonbirdmancr.com/tours/${slug}`,
       images: [
         {
           url: tour.featuredImage,

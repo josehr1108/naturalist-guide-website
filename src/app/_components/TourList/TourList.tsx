@@ -41,9 +41,9 @@ const TourList: React.FC<TourListProps> = ({ tourList = TOUR_LIST, title }) => {
                 </div>
               )}
             >
-              <h5 className="text-2xl font-bold tracking-tight mb-5">
+              <h3 className="text-2xl font-bold tracking-tight mb-5">
                 {tour.title}
-              </h5>
+              </h3>
               <p className="paragraph-text">{tour.shortDescription}</p>
             </Card>
           </Link>

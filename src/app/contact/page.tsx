@@ -3,7 +3,8 @@
 import HeroSection from "../_components/HeroSection/HeroSection";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { sendMail } from "../actions/sendMail";
-import { useActionState, useEffect } from "react";
+import { Suspense, useActionState, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Swal from "sweetalert2";
 
 const HERO_TITLE = "Let's Get In Touch";
@@ -17,7 +18,13 @@ interface FormState {
   error?: string;
 }
 
-const Contact = () => {
+const ContactContent = () => {
+  const searchParams = useSearchParams();
+  const [formValues, setFormValues] = useState({
+    subject: "",
+    message: "",
+  });
+
   const [state, formAction, isPending] = useActionState(
     async (state: FormState, formData: FormData) => {
       return await sendMail(formData);
@@ -27,6 +34,16 @@ const Contact = () => {
       error: "",
     },
   );
+
+  useEffect(() => {
+    const subject = searchParams.get("subject") ?? "";
+    const message = searchParams.get("message") ?? "";
+
+    setFormValues({
+      subject,
+      message,
+    });
+  }, [searchParams]);
 
   useEffect(() => {
     if (!isPending && state.success) {
@@ -127,6 +144,13 @@ const Contact = () => {
                     name="subject"
                     type="text"
                     placeholder="Subject"
+                    value={formValues.subject}
+                    onChange={(event) =>
+                      setFormValues((prev) => ({
+                        ...prev,
+                        subject: event.target.value,
+                      }))
+                    }
                     className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-tasman)]"
                   />
                   <textarea
@@ -134,6 +158,13 @@ const Contact = () => {
                     required
                     rows={4}
                     placeholder="Comment"
+                    value={formValues.message}
+                    onChange={(event) =>
+                      setFormValues((prev) => ({
+                        ...prev,
+                        message: event.target.value,
+                      }))
+                    }
                     className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-tasman)]"
                   />
                   <button
@@ -150,6 +181,14 @@ const Contact = () => {
         </div>
       </div>
     </main>
+  );
+};
+
+const Contact = () => {
+  return (
+    <Suspense fallback={null}>
+      <ContactContent />
+    </Suspense>
   );
 };
 

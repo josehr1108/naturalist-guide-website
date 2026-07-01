@@ -12,10 +12,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
-import { Clock, MapPin, User } from "lucide-react";
-import { HRTrimmed, HR } from "flowbite-react";
+import { Clock, MapPin, User, Check, X, Binoculars } from "lucide-react";
+import { HRTrimmed, HR, Button } from "flowbite-react";
 import PhotoGallery from "@/app/_components/PhotoGallery/PhotoGallery";
-import { Check, X } from "lucide-react";
 import { getRandomTours } from "@/app/helpers/tourList";
 import Link from "next/link";
 
@@ -30,6 +29,7 @@ const TourPage = ({ params }: { params: Promise<Tour> }) => {
 
   const otherTours = TOUR_LIST.filter((tour) => tour.slug !== slug);
   const relatedTours = getRandomTours(otherTours, 3);
+  const contactHref = `/contact?subject=${encodeURIComponent(`Booking request: ${selectedTour.title}`)}&message=${encodeURIComponent(`Hi Raul! I would love to learn more about the ${selectedTour.title} tour. Please let me know about availability and the best way to book it.`)}`;
 
   return (
     <main className="finishGradientBackground">
@@ -122,7 +122,6 @@ const TourPage = ({ params }: { params: Promise<Tour> }) => {
                 {section.type === "checkmarks" && (
                   <div>
                     {section.items.map((item, itemIdx) => {
-                      // Import the icons
                       const isChecked = item.icon === "checked";
                       const Icon = isChecked ? Check : X;
                       return (
@@ -165,7 +164,31 @@ const TourPage = ({ params }: { params: Promise<Tour> }) => {
               </div>
             ))}
         </div>
-        <div className="other-tours lg:order-4">
+
+        <div className="max-w-4xl mx-auto px-10 mb-12 lg:order-4">
+          <div className="flex flex-col items-center gap-6 rounded-2xl border border-[var(--color-tasman)]/30 bg-[var(--color-honeydew)]/80 p-6 shadow-[0_10px_30px_rgba(41,56,44,0.1)]">
+            <div className="w-full text-center">
+              <h2 className="text-2xl font-bold text-primary">
+                Book this tour now
+                <Binoculars size={30} className="text-primary mx-auto mt-3" />
+              </h2>
+            </div>
+            <div className="flex flex-col items-center gap-4 text-center">
+              <p className="text-primary paragraph-text">
+                Reach out and let&apos;s turn your travel dreams into a plan.
+              </p>
+              <Button
+                as={Link}
+                href={contactHref}
+                className="w-fit text-lg rounded-full bg-[var(--color-tasman)] px-6 py-2 text-[var(--color-forestgreen)] hover:bg-[var(--color-tasman)]/90"
+              >
+                Book now
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        <div className="other-tours lg:order-5">
           {relatedTours.length > 0 && (
             <>
               <div className="max-w-4xl mx-auto px-10">

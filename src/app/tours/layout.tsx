@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Nature Tours - Costa Rica Naturalist Guide",
     description:
       "Explore tropical forests, discover exotic birds, and experience Costa Rica's wildlife with expert-guided nature tours.",
-    url: "https://your-domain.com/tours", //TODO: Replace with your actual domain
+    url: "https://raulobregonbirdmancr.com/tours",
     type: "website",
   },
 };
